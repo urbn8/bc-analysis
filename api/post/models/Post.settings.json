@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "projectName": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "symbol": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "analysis": {
+      "default": "",
+      "type": "text"
+    },
+    "rating": {
+      "default": -1,
+      "max": 5,
+      "min": -1,
+      "type": "integer"
+    },
+    "twitterPostsCount": {
+      "default": "",
+      "type": "integer"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
