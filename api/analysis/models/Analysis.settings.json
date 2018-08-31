@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "analysis",
+  "info": {
+    "name": "analysis",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "projectName": {
+      "default": "",
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "twitterPostsCount": {
+      "default": "",
+      "type": "integer"
+    },
+    "symbol": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "analysis": {
+      "default": "",
+      "type": "text"
+    },
+    "rating": {
+      "default": -1,
+      "max": 5,
+      "min": -1,
+      "type": "integer"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}
